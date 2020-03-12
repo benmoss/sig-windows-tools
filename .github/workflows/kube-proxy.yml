@@ -1,6 +1,8 @@
 name: kube-proxy-images
 
 on:
+  repository_dispatch:
+    types: foo
   schedule:
   - cron: "0 0 * * *"
 
